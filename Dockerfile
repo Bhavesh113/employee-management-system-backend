@@ -9,4 +9,4 @@ RUN ./mvnw clean package -DskipTests
 
 EXPOSE 8080
 
-ENTRYPOINT ["java","-jar","target/*.jar"]
+ENTRYPOINT ["sh","-c","java -jar target/EmployeeManagementSystem-0.0.1-SNAPSHOT.war"]
